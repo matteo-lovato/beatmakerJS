@@ -16,24 +16,13 @@ svg {
 .kick-pad,
 .snare-pad,
 .hihat-pad,
-.clap-pad {
+.clap-pad,
+.cowbell-pad {
   width: 5rem;
   height: 5rem;
   cursor: pointer;
   margin: 1rem 0.5rem;
-}
-
-.kick-pad {
-  background: rgb(116, 146, 194);
-}
-.snare-pad {
-  background: rgb(182, 135, 182);
-}
-.hihat-pad {
-  background: rgb(189, 170, 129);
-}
-.clap-pad {
-  background: rgb(129, 189, 129);
+  background: lightgray;
 }
 .kick-pad.active {
   background: rgb(53, 130, 255);
@@ -46,6 +35,9 @@ svg {
 }
 .clap-pad.active {
   background: rgb(63, 243, 63);
+}
+.cowbell-pad.active {
+  background: rgb(132, 63, 243);
 }
 
 .sequencer {
@@ -67,7 +59,8 @@ svg {
 .kick,
 .snare,
 .hihat,
-.clap {
+.clap,
+.cowbell {
   display: flex;
 }
 

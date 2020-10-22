@@ -6,6 +6,7 @@ class DrumKit {
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
     this.clapAudio = document.querySelector(".clap-sound");
+    this.cowbellAudio = document.querySelector(".cowbell-sound");
     this.index = 0;
     this.bpm = 150;
     this.isPlaying = null;
@@ -39,6 +40,10 @@ class DrumKit {
         if (bar.classList.contains("clap-pad")) {
           this.clapAudio.currentTime = 0;
           this.clapAudio.play();
+        }
+        if (bar.classList.contains("cowbell-pad")) {
+          this.cowbellAudio.currentTime = 0;
+          this.cowbellAudio.play();
         }
       }
     });
@@ -88,6 +93,9 @@ class DrumKit {
       case "clap-select":
         this.clapAudio.src = selectionValue;
         break;
+      case "cowbell-select":
+        this.cowbellAudio.src = selectionValue;
+        break;
     }
   }
 
@@ -109,6 +117,9 @@ class DrumKit {
         case "3":
           this.clapAudio.volume = 0;
           break;
+        case "4":
+          this.cowbellAudio.volume = 0;
+          break;
       }
     } else {
       switch (muteIndex) {
@@ -123,6 +134,9 @@ class DrumKit {
           break;
         case "3":
           this.clapAudio.volume = 1;
+          break;
+        case "4":
+          this.cowbellAudio.volume = 1;
           break;
       }
     }
