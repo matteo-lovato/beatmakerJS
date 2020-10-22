@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="sequencer">
-      <div class="kick-track">
+      <div class="kick-track track">
         <div class="controls">
           <h1>Kick</h1>
           <button data-track="0" class="mute kick-volume">
@@ -68,7 +68,7 @@
         </div>
       </div>
 
-      <div class="snare-track">
+      <div class="snare-track track">
         <div class="controls">
           <h1>Snare</h1>
           <button data-track="1" class="mute snare-volume">
@@ -118,7 +118,7 @@
           <div class="pad snare-pad b7"></div>
         </div>
       </div>
-      <div class="hihat-track">
+      <div class="hihat-track track">
         <div class="controls">
           <h1>HiHat</h1>
           <button data-track="2" class="mute hihat-volume">
@@ -153,6 +153,32 @@
           <div class="pad hihat-pad b7"></div>
         </div>
       </div>
+      <div class="clap-track track">
+        <div class="controls">
+          <h1>Clap</h1>
+          <button data-track="3" class="mute hihat-volume">
+            <i class="fas fa-volume-mute"></i>
+          </button>
+          <select name="clap-select" id="clap-select">
+            <option value="./allSounds/clap-808.wav">808 Clap</option>
+            <option value="./allSounds/clap-analog.wav">Analog Clap</option>
+            <option value="./allSounds/clap-crushed.wav">Crushed Clap</option>
+            <option value="./allSounds/clap-fat.wav">Fat Clap</option>
+            <option value="./allSounds/clap-slapper.wav">Slapper Clap</option>
+            <option value="./allSounds/clap-tape.wav">Tape Clap</option>
+          </select>
+        </div>
+        <div class="clap">
+          <div class="pad clap-pad b0"></div>
+          <div class="pad clap-pad b1"></div>
+          <div class="pad clap-pad b2"></div>
+          <div class="pad clap-pad b3"></div>
+          <div class="pad clap-pad b4"></div>
+          <div class="pad clap-pad b5"></div>
+          <div class="pad clap-pad b6"></div>
+          <div class="pad clap-pad b7"></div>
+        </div>
+      </div>
       <button class="play">Play</button>
       <div class="tempo">
         <input
@@ -169,6 +195,8 @@
     <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
     <audio class="snare-sound" src="./allSounds/snare-acoustic01.wav"></audio>
     <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
+    <audio class="clap-sound" src="./allSounds/clap-808.wav"></audio>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
       integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ=="
