@@ -17,7 +17,8 @@ svg {
 .snare-pad,
 .hihat-pad,
 .clap-pad,
-.cowbell-pad {
+.cowbell-pad,
+.crash-pad {
   width: 5rem;
   height: 5rem;
   cursor: pointer;
@@ -38,6 +39,9 @@ svg {
 }
 .cowbell-pad.active {
   background: rgb(132, 63, 243);
+}
+.crash-pad.active {
+  background: rgb(243, 150, 63);
 }
 
 .sequencer {
@@ -60,7 +64,8 @@ svg {
 .snare,
 .hihat,
 .clap,
-.cowbell {
+.cowbell,
+.crash {
   display: flex;
 }
 
